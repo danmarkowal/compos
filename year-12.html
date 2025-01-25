@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPOS Proxy - Year 12 Assignments</title>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="assignment.js"></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/latin-modern-math"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>COMPOS Proxy</h1>
+    <h2>Year 12 Assignments</h2>
+    <article class="assignments">
+      <section>
+        <h3>Maths</h3>
+        <ul id="maths-assignments"></ul>
+      </section>
+      <section>
+        <h3>Physics</h3>
+        <ul id="physics-assignments"></ul>
+      </section>
+    </article>
+    <h3><a href="/">Back</a></h3>
+    <footer class="footer">
+      <span>
+        Made by
+        <a href="https://github.com/danmarkowal" target="_blank">danmarkowal</a>
+      </span>
+    </footer>
+    <script defer>
+      const mathsAssignments = document.getElementById("maths-assignments");
+      const physicsAssignments = document.getElementById("physics-assignments");
+
+      makeAssignments("maths", 12, mathsAssignments);
+      makeAssignments("physics", 12, physicsAssignments);
+    </script>
+  </body>
+</html>
